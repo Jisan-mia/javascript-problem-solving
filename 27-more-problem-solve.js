@@ -33,4 +33,21 @@ const budgetCalculator = (
 };
 
 const result1 = budgetCalculator(2, 1, 1);
-console.log(result);
+// console.log(result1);
+
+// mega friend
+// return the friend name who has the largest spellings from an array of friends name
+
+const megaFriend = (friendsArray) => {
+	let largestFriend = friendsArray[0];
+	for (let i = 0; i < friendsArray.length; i++) {
+		if (friendsArray[i].length > largestFriend.length) {
+			largestFriend = friendsArray[i];
+		}
+	}
+	return largestFriend;
+};
+
+const friendsArray = ["Jisan", "Shawon", "Mursalin", "Shakil", "Porag", "Toem"];
+const largestFriend = megaFriend(friendsArray);
+console.log(largestFriend);
