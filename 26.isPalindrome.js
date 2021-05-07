@@ -4,7 +4,7 @@ function isPalindrme1(string) {
 	return string.split("").reverse().join("") == string;
 }
 
-// console.log(isPalindrme(string));
+console.log(isPalindrme1(string));
 
 // using for loop
 const isPalindrome2 = (string) => {
@@ -20,5 +20,5 @@ const isPalindrome2 = (string) => {
 };
 
 if (isPalindrome2(string) == true) {
-	console.log("Palindrome");
+	// console.log("Palindrome");
 }
