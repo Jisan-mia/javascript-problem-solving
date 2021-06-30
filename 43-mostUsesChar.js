@@ -3,10 +3,11 @@
 function getMostUsesChar(str) {
 	if (typeof str == "string") {
 		let data = {};
-		for (let i = 0; i < str.length; i++) {
-			if (data[str[i]]) {
+		for (let s of str) {
+			if (data[s]) {
+				data[s] = data[s] + 1;
 			} else {
-				data[str[i]] = 1;
+				data[s] = 1;
 			}
 		}
 		return data;
