@@ -2,18 +2,25 @@
 
 function getMostUsesChar(str) {
 	if (typeof str == "string") {
-		let data = {};
-		for (let s of str) {
-			if (data[s]) {
-				data[s] = data[s] + 1;
-			} else {
-				data[s] = 1;
+		let charCount = {};
+		let mostUseChar = "";
+		let mostUseCharCount = 0;
+		for (let char of str) {
+			charCount[char] = charCount[char] ? charCount[char] + 1 : 1;
+		}
+
+		for (let key in charCount) {
+			// console.log(charCount[key]);
+			if (charCount[key] > mostUseCharCount) {
+				mostUseCharCount = charCount[key];
+				mostUseChar = key;
 			}
 		}
-		return data;
+
+		return mostUseChar;
 	}
 	return;
 }
 
-const result = getMostUsesChar("youaregood");
+const result = getMostUsesChar("Jisaan-mia");
 console.log(result);
