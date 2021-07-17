@@ -14,5 +14,5 @@ function isArmstrong(number) {
 
 	return sum == number;
 }
-const checkArmstrong = isArmstrong(1634);
+const checkArmstrong = isArmstrong(5);
 console.log(checkArmstrong);
