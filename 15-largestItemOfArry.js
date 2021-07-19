@@ -1,17 +1,16 @@
-// find the lagest number of an array
-
+// find the largest number of an array
 
 function largesNumOfArr(array) {
-    let largestNum = array[0];
+	let largestNum = array[0];
 
-    for (let i = 0; i < array.length; i++) {
-        let element = array[i];
+	for (let i = 0; i < array.length; i++) {
+		let element = array[i];
 
-        if (element > largestNum) {
-            largestNum = element;
-        }
-    }
-    return largestNum;
+		if (element > largestNum) {
+			largestNum = element;
+		}
+	}
+	return largestNum;
 }
 const marks = [25, 89, 53, 65];
 
