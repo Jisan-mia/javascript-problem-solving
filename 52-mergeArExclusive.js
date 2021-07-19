@@ -1,19 +1,11 @@
 // Create a function that will receive two arrays of numbers as arguments and return an array composed of all the numbers that are either in the first array or second array but not in both
 
 function getUniqueOf2arr(arr1, arr2) {
-	const uniqueArr = [];
+	let uniqueArr = [];
 
-	for (let i = 0; i < arr1.length; i++) {
-		if (!arr2.includes(arr[i])) {
-			uniqueArr.push(arr1[i]);
-		}
-	}
+	uniqueArr = [...arr1.filter((num) => !arr2.includes(num))];
+	uniqueArr = [...uniqueArr, ...arr2.filter((num) => !arr1.includes(num))];
 
-	for (let i = 0; i < arr2.length; i++) {
-		if (!arr1.includes(arr2[i])) {
-			uniqueArr.push(arr2[i]);
-		}
-	}
 	return uniqueArr;
 }
 
