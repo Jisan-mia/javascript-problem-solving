@@ -2,7 +2,6 @@
 // eg. 153, 370, 371, 407, 1634, 8208 etc. are armstrong number
 // 153 = 1³ + 5³ + 3³
 // 1634 = 1⁴ + 6⁴ + 3⁴ + 4⁴
-
 function isArmstrong(number) {
 	const numStr = number.toString();
 	const length = numStr.length;
