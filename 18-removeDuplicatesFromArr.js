@@ -32,3 +32,6 @@ const ticket = [1, 2, 3, 3, 4, 5, 2, 6, 7, 7, 9, 4, 10, 2];
 
 const result = uniqueArray(ticket);
 console.log(result);
+
+// an easy way susing set
+const uniqueArr2 = [...new Set(ticket)]
