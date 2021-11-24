@@ -136,7 +136,7 @@ function recurFactorial(n) {
 }
 console.log(recurFactorial(5));
 ```
-7. fibonacci sequence
+7. fibonacci sequence for loop
 ```js
 //fibonacci series using foor loop
 //fibonacci series=  0 1 1 2 3 5 8 13 21 34 55 89....
@@ -161,8 +161,9 @@ function fibonacci(n) {
 }
 
 console.log(fibonacci(10));
-
-
+```
+8. fibonacci sequence while loop
+```js
 //fibonacci series using while loop
 function fibonacci1(n) {
     let i, fibo;
@@ -176,7 +177,10 @@ function fibonacci1(n) {
 }
 
 console.log(fibonacci1(10));
+```
 
+9. fibonacci sequence recursive way
+```js
 //create a fibiancci series in a recursive way
 //fibo[n] = fibo[n-1] + fibo[n-2]
 //[0, 1, 1, 2, 3, 5, 8, 13, 21..]
@@ -198,5 +202,4 @@ function fibonacci3(n) {
 
 var result1 = fibonacci3(10);
 console.log(result1);
-
 ```
