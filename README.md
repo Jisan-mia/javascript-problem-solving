@@ -161,4 +161,19 @@ function fibonacci(n) {
 }
 
 console.log(fibonacci(10));
+
+
+//fibonacci series using while loop
+function fibonacci1(n) {
+    let i, fibo;
+    fibo = [0, 1];
+    i = 2;
+    while (i <= n) {
+        fibo[i] = fibo[i - 1] + fibo[i - 2];
+        i++;
+    }
+    return fibo;
+}
+
+console.log(fibonacci1(10));
 ```
