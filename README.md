@@ -176,4 +176,27 @@ function fibonacci1(n) {
 }
 
 console.log(fibonacci1(10));
+
+//create a fibiancci series in a recursive way
+//fibo[n] = fibo[n-1] + fibo[n-2]
+//[0, 1, 1, 2, 3, 5, 8, 13, 21..]
+function fibonacci3(n) {
+	if (n == 0) {
+		return [0];
+	}
+	if (n == 1) {
+		return [0, 1];
+	} else {
+		//calculate array nth element
+		let fibo = fibonacci3(n - 1);
+
+		let nextElement = fibo[n - 1] + fibo[n - 2];
+		fibo.push(nextElement);
+		return fibo;
+	}
+}
+
+var result1 = fibonacci3(10);
+console.log(result1);
+
 ```
