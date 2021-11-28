@@ -203,3 +203,22 @@ function fibonacci3(n) {
 var result1 = fibonacci3(10);
 console.log(result1);
 ```
+
+10. nth number of fibonacci series
+```js
+//get nth number fibonacci series  using recursive function
+//fibo[n] = fibo[n-1] + fibo[n-2]
+
+function fib(n) {
+	if (n == 0) {
+		return 0;
+	}
+	if (n == 1) {
+		return 1;
+	}
+	return fib(n - 1) + fib(n - 2);
+}
+
+let result = fib(100);
+console.log(result);
+```
