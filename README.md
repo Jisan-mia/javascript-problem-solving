@@ -262,3 +262,20 @@ function isPrime1(n) {
 let result1 = isPrime1(13);
 // console.log(result1);
 ```
+12. Swap value
+```js
+// 4 way to swap variable values in JavaScript
+// suppose we have two variable a and b, we want to swap there values
+// for example the value of a and b are 2, 3
+// the result would be a = 3, b = 2
+
+let a = 2;
+let b = 3;
+
+// using temp variable
+let temp = a;
+a = b;
+b = temp;
+console.log(a,b) // a = 3, b = 2
+
+```
