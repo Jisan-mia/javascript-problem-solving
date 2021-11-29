@@ -278,4 +278,9 @@ a = b;
 b = temp;
 console.log(a,b) // a = 3, b = 2
 
+// using array destructuring 
+[a, b] = [b, a];
+console.log(a,b) // a = 3, b = 2
+
+
 ```
