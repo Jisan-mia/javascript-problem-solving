@@ -282,7 +282,13 @@ console.log(a,b) // a = 3, b = 2
 [a, b] = [b, a];
 console.log(a,b) // a = 3, b = 2
 
-// using math/arithmetic in one line
+// using math in one line
 b = a + (a = b) - b;
+console.log(a,b) // a = 3, b = 2
+
+// using arithmetic operator
+a = a + b; // add a, b then assign to a(a = 5)
+b = a - b; // subtract b(3) from a(5) and assing to b(b = 2)
+a = a - b; // subtract b(2) from a(5) and assign to a(a = 3)
 console.log(a,b) // a = 3, b = 2
 ```
