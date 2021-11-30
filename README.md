@@ -318,3 +318,22 @@ const ceilResult = Math.ceil(num);
 const roundResult = Math.round(num);
 //console.log(roundResult);
 ```
+14. Maximum of 3 num
+```js
+function max3Num(num1, num2, num3) {
+    let max = num1;
+    if (num2 > max) {
+        max = num2;
+    }
+    if (num3 > max) {
+        max = num3;
+    }
+    return max;
+}
+//console.log(max3Num(40, 50, 60));
+
+
+//using math object
+const maxNumber = Math.max(5, 34, 30);
+console.log(maxNumber)
+```
