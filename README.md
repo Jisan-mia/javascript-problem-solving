@@ -337,3 +337,23 @@ function max3Num(num1, num2, num3) {
 const maxNumber = Math.max(5, 34, 30);
 console.log(maxNumber)
 ```
+15. Largest number of array
+```js
+// find the largest number of an array
+
+function largesNumOfArr(array) {
+	let largestNum = array[0];
+
+	for (let i = 0; i < array.length; i++) {
+		let element = array[i];
+
+		if (element > largestNum) {
+			largestNum = element;
+		}
+	}
+	return largestNum;
+}
+const marks = [25, 89, 53, 65];
+
+console.log(largesNumOfArr(marks));
+```
