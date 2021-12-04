@@ -20,5 +20,7 @@ function arraySum(array) {
     return sum;
 }
 
-const jisanMarks = [85, 78, 90, 80, 88];
-console.log(arraySum(jisanMarks));
+const numbers = [85, 78, 90, 80, 88];
+console.log(arraySum(numbers));
+
+const total = numbers.reduce((acc, currentValue) => acc + currentValue , 0)
