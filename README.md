@@ -376,3 +376,22 @@ const marks = [25, 89, 15, 65];
 
 console.log(smallestNumOfArr(marks));
 ```
+17. Sum of array items
+```js
+//function
+function arraySum(array) {
+    let sum = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        let element = array[i];
+        sum = sum + element;
+    }
+    return sum;
+}
+
+const numbers = [85, 78, 90, 80, 88];
+console.log(arraySum(numbers));
+
+//using reduce method
+const total = numbers.reduce((acc, currentValue) => acc + currentValue , 0)
+```
