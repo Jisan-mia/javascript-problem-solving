@@ -395,3 +395,26 @@ console.log(arraySum(numbers));
 //using reduce method
 const total = numbers.reduce((acc, currentValue) => acc + currentValue , 0)
 ```
+```js
+//function of unique array
+function uniqueArray(array) {
+    const newArray = [];
+
+    for (let i = 0; i < array.length; i++) {
+        let element = array[i];
+
+        let index = newArray.indexOf(element);
+        if (index == -1) {
+            newArray.push(element);
+        }
+    }
+    return newArray;
+}
+const ticket = [1, 2, 3, 3, 4, 5, 2, 6, 7, 7, 9, 4, 10, 2];
+
+const result = uniqueArray(ticket);
+console.log(result);
+
+// an easy way using set
+const uniqueArr2 = [...new Set(ticket)]
+```
