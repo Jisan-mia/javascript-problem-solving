@@ -395,6 +395,7 @@ console.log(arraySum(numbers));
 //using reduce method
 const total = numbers.reduce((acc, currentValue) => acc + currentValue , 0)
 ```
+18. Remove duplicate from arrays
 ```js
 //function of unique array
 function uniqueArray(array) {
