@@ -526,4 +526,17 @@ function stringReverse(str) {
     // return str.split("").reverse().join("");
 }
 console.log(stringReverse(myString));
-``
+```
+
+20. feet to mile
+```js
+//feet to mile
+let mile;
+
+function feetToMile(feet) {
+    mile = feet / 5200;
+    return mile;
+}
+const result = feetToMile(6500);
+console.log(result)
+```
