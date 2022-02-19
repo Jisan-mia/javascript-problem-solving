@@ -614,3 +614,17 @@ const text = 555555;
 const result = isPalindrome(text);
 console.log(result);
 ```
+25. String to word
+```js
+function stringToWordArr(string) {
+	if (typeof string === "string") {
+		return string.split(" ");
+	} else {
+		return "Enter valid input";
+	}
+}
+
+const text = "My name is Jisan";
+const result = stringToWordArr(text);
+console.log(result);
+```
