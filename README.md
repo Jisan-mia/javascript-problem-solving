@@ -702,3 +702,15 @@ function getMostUsesChar(str) {
 const result = getMostUsesChar("Jisaan-mia");
 console.log(result);
 ```
+28. remove duplicate from an array using reduce
+```js
+// remove duplicate from an array
+const arrWithDuplicates = [3, 4, 1, 6, 23, 4, 3, 8, 1];
+const uniqueArr = arrWithDuplicates.reduce((acc, currentValue) => {
+	if (acc.indexOf(currentValue) === -1) {
+		acc.push(currentValue);
+	}
+	return acc;
+}, []);
+console.log(uniqueArr);
+```
