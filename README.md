@@ -870,3 +870,12 @@ function fibonacci3(n) {
 var result1 = fibonacci3(10);
 console.log(result1);
 ```
+36. check if a(object) has a key b(string). if so return true else false
+```js
+function checkObjHasKey(a, b) {
+	if(a[b]) {
+		return true
+	}
+	return false
+}
+```
