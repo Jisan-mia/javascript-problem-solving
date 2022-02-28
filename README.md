@@ -879,3 +879,30 @@ function checkObjHasKey(a, b) {
 	return false
 }
 ```
+37. median
+```js
+/**
+ * Given two sorted arrays array1 and array2 of size m and n respectively.
+ * Find the median of the two sorted arrays.
+ *
+ * @Example 1:
+ * Input:
+ * m = 3, n = 4
+ * array1 = [1, 9, 15]
+ * array2 = [2, 4, 5, 23]
+ *
+ * Output: 5
+ *
+ * @Example 2:
+ * Input:
+ * m = 2, n = 4
+ * array1 = [41, 78]
+ * array2 = [3, 4, 7, 8]
+ *
+ * Output: 7.5
+ *
+ * Expected Time Complexity: O(min(log n, log m)).
+ * Expected Auxiliary Space: O((n+m)/2).
+ */
+ ```
+ 
