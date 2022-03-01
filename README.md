@@ -905,4 +905,20 @@ function checkObjHasKey(a, b) {
  * Expected Auxiliary Space: O((n+m)/2).
  */
  ```
- 
+ 37. Bracket Mather
+ ```js
+ // Have the function bracketMather(str) take the str parameter being passed and return 1 if the brackets are correctly matched and each one is accounted for. Otherwise return 0
+ function bracketMather(str) {
+  let open = 0;
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === '(') open++;
+    if (str[i] === ')') open--;
+    if (open < 0) return 0;
+  }
+
+  return open ? 0 : 1;
+}
+
+bracketMather('(a+b)(b-a))')  // 0
+ ```
