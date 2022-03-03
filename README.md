@@ -936,3 +936,9 @@ function isAnagram(first, second) {
   return a === b;
 }
 ```
+39. clone javascript objects
+```js
+const obj = { a: 1, b: 2 }
+const shallowClone = { ...obj }
+const depthClone = object.keys(obj).reduce((acc, key) => (acc[key] = obj[key], acc), {})
+```
