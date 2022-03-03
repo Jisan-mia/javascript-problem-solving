@@ -942,3 +942,11 @@ const obj = { a: 1, b: 2 }
 const shallowClone = { ...obj }
 const depthClone = object.keys(obj).reduce((acc, key) => (acc[key] = obj[key], acc), {})
 ```
+40. generate an array, containing the Fibonacci sequence, up until the nth term
+```js
+const fibonacci = n =>
+  [...Array(n)].reduce(
+    (acc, val, i) => acc.concat(i > 1 ? acc[i - 1] + acc[i - 2] : i),
+    []
+  )
+```
