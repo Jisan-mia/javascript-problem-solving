@@ -1013,3 +1013,15 @@ console.log(Boolean(45 > 50)); // return false since 45 is not getter than 50 an
 console.log(Boolean("Jisan")); // return true since 'Jisan' is not an falsy value
 console.log(Boolean("")); // return true since ''(blank) is an falsy value
 ```
+42. convert year into seconds
+```js
+const yearToSecond(year) {
+	const days = year * 365
+	const hours = days * 24
+	const minutes = hours * 60
+	const seconds = minutes * 60
+	return seconds;
+}
+yearToSecond(1) 
+
+```
