@@ -461,7 +461,11 @@ function count_words(str) {
 myString = "My   name is Jisan."
 console.log(count_words(myString))
 
+
 ```
+
+```
+
 20. Different ways to reverse a string
 ```js
 //reverse string with increement for loop
@@ -1025,3 +1029,34 @@ const yearToSecond(year) {
 yearToSecond(1) 
 
 ```
+
+43. Count word [source](https://gist.github.com/joynal/cb9b9b6fdd30c1fb6ef805266500f706)
+```js
+// input an string and return the counts of every word used othe that string
+// in an object, eg.
+// str = "Fear leads to anger ; anger leads to hatred ; hatred leads to conflict ; conflict leads to suffering"
+var exptedOutput = {
+    "Fear": 1,
+    "leads": 4,
+    "to": 4,
+    "anger": 2,
+    ";": 3,
+    "hatred": 2,
+    "conflict": 2,
+    "suffering": 1
+}
+
+const mutableApproach = str => {
+	let countedWords = {};
+	str.split(" ").forEach((word) => {
+		if(countedWords[word]) {
+			countedWords[word] += 1;
+			return;
+		}
+		countedWords[word] = 1;
+	})
+	return countedWords
+}
+
+```
+
