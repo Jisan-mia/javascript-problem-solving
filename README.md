@@ -1071,4 +1071,27 @@ console.log(mutableApproach(inputStr));
 console.log(functionalApproach(inputStr));
 
 ```
+44. isTwin
+```js
+// check if two string has the characters/letters, could be ordered or unordered
+// eg "hello", "world" = false
+// "lambs", "balms" = true
+// "flow", "wolf" = true
+// "cat", "act" = true
+
+
+const isTwin = (str1, str2) => {
+	if(str1.length !== str2.length) {
+		return false
+	}
+	
+	const sortStr1 = str1.toLowerCase().split('').sort();
+	const sortStr2 = str2.toLowerCase().split('').sort();
+	
+	return sortStr1.join('') == sortStr2.join('');
+}
+
+console.log(isTwin('cat', 'act')) // true
+
+```
 
