@@ -1034,7 +1034,7 @@ yearToSecond(1)
 ```js
 // input an string and return the counts of every word used othe that string
 // in an object, eg.
-// str = "Fear leads to anger ; anger leads to hatred ; hatred leads to conflict ; conflict leads to suffering"
+var inputStr = "Fear leads to anger ; anger leads to hatred ; hatred leads to conflict ; conflict leads to suffering"
 var exptedOutput = {
     "Fear": 1,
     "leads": 4,
@@ -1057,6 +1057,18 @@ const mutableApproach = str => {
 	})
 	return countedWords
 }
+
+const functionalApproach = str => 
+	str.split(" ").reduce((acc, word) => {
+		if(acc[word]) {
+			return {...acc, [word]: acc[word] + 1};
+		}
+		return {...acc, [word]: 1}
+	}, {})
+	
+
+console.log(mutableApproach(inputStr));
+console.log(functionalApproach(inputStr));
 
 ```
 
