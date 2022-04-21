@@ -1094,4 +1094,27 @@ const isTwin = (str1, str2) => {
 console.log(isTwin('cat', 'act')) // true
 
 ```
+45. Multiples of 3 or 5(codewars)
+```js
+// We want our function to take a number and
+// then provide the sum of all the natural numbers below it,
+// which are multiples of either 3 or 5.
 
+function solution(number) {
+	let sum = 0;
+	for (let i = 0; i<number; i++) {
+		if(i % 3 == 0 || i % 5 == 0) {
+			sum = sum+i;
+			continue;
+		} else if(i % 5 == 0) {
+			sum = sum + i;
+			continue;
+		} else {
+			continue;
+		}
+	}
+	return sum;
+}
+
+console.log(solution(100))
+```
