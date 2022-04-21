@@ -1116,5 +1116,21 @@ function solution(number) {
 	return sum;
 }
 
-console.log(solution(100))
+console.log(solution(100)) // 2318
+```
+46. fibonacci even number sum
+```js
+// find the sum of the even-valued terms
+function fiboEvenSum(n) {
+	let result = [0,1];
+	for(let i = 0; i < (n-1); i++) {
+		const sum = result[result.length - 1] + result[result.length-2];
+		result.push(sum)
+	}
+	
+	const evenSum = result.filter(item => item % 2 == 0).reduce((acc, currentValue) => acc+currentValue)
+	return evenSum;
+}
+console.log(fiboEvenSum(10)) // 44
+
 ```
