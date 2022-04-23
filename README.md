@@ -1150,6 +1150,6 @@ function sumDigitStrings(digitStr) {
 	return digitSum;
 }
 
-console.log(sumDigitStrings('wo123r4l5d'))
+console.log(sumDigitStrings('wo123r4l5d')) // 15
 
 ```
