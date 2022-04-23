@@ -1134,3 +1134,22 @@ function fiboEvenSum(n) {
 console.log(fiboEvenSum(10)) // 44
 
 ```
+47. Sum all digits within an string
+```js
+// sum of all digits that occur in a given string.
+
+
+function sumDigitStrings(digitStr) {
+	let digitSum = 0;
+	for(let i = 0; i < digitStr.length; i++) {
+		if(!isNaN(digitStr[i])) {
+			digitSum += Number(digitStr[i]);
+		}
+	}
+	
+	return digitSum;
+}
+
+console.log(sumDigitStrings('wo123r4l5d'))
+
+```
