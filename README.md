@@ -1153,3 +1153,19 @@ function sumDigitStrings(digitStr) {
 console.log(sumDigitStrings('wo123r4l5d')) // 15
 
 ```
+
+48. sum of cubes
+```js
+// return the sum of cubes of all integer from 1 to a given integer
+
+function sumOfCubes(n) {
+	let cSums = 0;
+	for (let i = 1; i <= n; i++) {
+    		cSums += Math.pow(i, 3);
+  	}
+	return cSums;
+}
+
+
+console.log(sumOfCubes(3)) // 36
+```
