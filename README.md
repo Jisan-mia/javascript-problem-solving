@@ -1169,3 +1169,20 @@ function sumOfCubes(n) {
 
 console.log(sumOfCubes(3)) // 36
 ```
+49. 
+```js
+// Write a function that returns each number in the
+// array if it is larger than all the numbers to the
+// right or if it is the last value
+
+const values = [16, 17, 4, 3, 5, 2]; // should return [17, 5, 2]
+
+const result = values.filter((value, idx) =>
+  values
+    .slice(idx + 1)
+    .every(rightValue => value > rightValue)
+);
+
+console.log(result);
+
+```
