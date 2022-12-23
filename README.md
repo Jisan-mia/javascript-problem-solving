@@ -1186,7 +1186,15 @@ const result = values.filter((value, idx) =>
 console.log(result);
 
 ```
-50. 
+50. Longest string of an array
 ```js
-
+function longestStr(arr) {
+	let longest = arr[0];
+	arr.forEach(item => {
+		if(item.length > longest.length) {
+			longest = item
+		}
+	})
+	return longest
+}
 ```
