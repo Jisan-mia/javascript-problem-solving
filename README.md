@@ -1186,3 +1186,7 @@ const result = values.filter((value, idx) =>
 console.log(result);
 
 ```
+50. 
+```js
+
+```
