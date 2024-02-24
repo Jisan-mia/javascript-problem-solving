@@ -1,3 +1,11 @@
+// Create a function that takes a string and returns a
+// new string with duplicates removed
+
+/*
+ const str = 'This is is a test test string';
+ removeDuplicate(str); // 'This is a test string'
+ */
+
 function removeDuplicate(str) {
   const wordArr = str.split(" ");
   const newArr = [];
@@ -27,7 +35,6 @@ function removeDuplicate2(str) {
 }
 
 console.log(removeDuplicate2(str));
-
 
 function removeDuplicate3(str) {
   const wordArr = str.split(" ");
