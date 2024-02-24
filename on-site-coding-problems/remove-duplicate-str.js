@@ -14,3 +14,16 @@ function removeDuplicate(str) {
 
 const str = "This is is a test test input";
 console.log(removeDuplicate(str));
+
+function removeDuplicate2(str) {
+  return str
+    .split(" ")
+    .reduce(
+      (acc, currentVal) =>
+        acc.indexOf(currentVal) == -1 ? [...acc, currentVal] : acc,
+      []
+    )
+    .join(" ");
+}
+
+console.log(removeDuplicate2(str));
