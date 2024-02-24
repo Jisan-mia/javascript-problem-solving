@@ -27,3 +27,13 @@ function removeDuplicate2(str) {
 }
 
 console.log(removeDuplicate2(str));
+
+
+function removeDuplicate3(str) {
+  const wordArr = str.split(" ");
+  const set = new Set(wordArr);
+  const newString = [...set].join(" ");
+  return newString;
+}
+
+console.log(removeDuplicate3(str));
